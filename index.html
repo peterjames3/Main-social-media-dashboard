@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;600&family=Epilogue:wght@500;700&family=Fraunces:ital,wght@1,700;1,900&family=Inter:wght@300;500;700&family=Josefin+Sans:ital,wght@0,400;1,100;1,300;1,600&family=League+Spartan:wght@400;500;700&family=Manrope:wght@500;700&family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&family=Overpass:wght@300;400;700&family=Poppins:ital,wght@0,600;0,700;1,200;1,400&family=Raleway:wght@400;700&family=Roboto:wght@300&family=Rubik:ital,wght@0,400;0,500;0,700;1,300&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="app.css">
+
+
+</head>
+<body>
+  <div class="main-container">
+    <div class="header">
+     <div class="row-1">
+      <h1>Social Media Dashboard</h1>
+      <p>Total Follwers:23,004</p>
+      <hr>
+     </div>
+    
+     <div class="row-2">
+      <p class="mode" id="mode">Dark Mode</p>
+      <div class="toggle">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+      </label>
+      </div>
+     </div>
+    </div>
+
+    <div class="col-social">
+      <div class="col-fb" id="coll">
+        <nav><img src="images/icon-facebook.svg" alt="img" srcset="">
+          <a href="#"> @nathanf</a>
+        </nav>
+        
+        <h2 id="update">1987</h2>
+        <p>FOLLOWERS</p>
+        <nav class="icon"><img src="images/icon-up.svg" alt="img" srcset="">
+          <span> 12 Today</span>
+        </nav>
+      </div>
+      <div class="col-twitter" id="coll">
+        <nav><img src="images/icon-twitter.svg" alt="img" srcset="">
+          <a href="#"> @nathanf</a>
+        </nav>
+        <h2 id="update">1044</h2>
+        <p>FOLLOWERS</p>
+        <nav class="icon"><img src="images/icon-up.svg" alt="img" srcset="">
+          <span> 99 Today</span>
+        </nav>
+      </div>
+      <div class="col-ig" id="coll">
+        <nav><img src="images/icon-instagram.svg" alt="img" srcset="">
+          <a href="#">  @realnathanf</a>
+        </nav>
+        <h2 id="update">11k</h2>
+        <p>FOLLOWERS</p>
+        <nav class="icon"><img src="images/icon-up.svg" alt="img" srcset="">
+          <span> 1099 Today</span>
+        </nav>
+      </div>
+      <div class="col-youtube" id="coll">
+        <nav><img src="images/icon-youtube.svg" alt="img" srcset="">
+          <a href="#"> Nathan F.</a>
+        </nav>
+        <h2 id="update">8239</h2>
+        <p>SUBSCRIBERS</p>
+        <nav class="icon"><img src="images/icon-down.svg" alt="img" srcset="">
+          <span class="decrease"> 144 Today</span>
+        </nav>
+      </div>
+
+    </div>
+
+    <section>
+      <div class="sub-title">
+        <h1 id="sub-title">Overview - Today</h1>
+      </div>
+      
+      <div class="grid-container">
+       <div class="grind-items">
+        <aside>
+          <p>Page Views</p>
+          <span class="details">87</span>
+        </aside>
+        <aside>
+          <img src="images/icon-facebook.svg" alt="img" srcset="">
+          <nav class="icon"><img src="images/icon-up.svg" alt="img" srcset="">
+            <span> 3%</span>
+        </aside>
+       </div>
+       <div class="grind-items">
+        <aside>
+          <p>Likes</p>
+          <span class="details">52</span>
+        </aside>
+        <aside>
+          <img src="images/icon-facebook.svg" alt="img" srcset="">
+          <nav class="icon"><img src="images/icon-down.svg" alt="img" srcset="">
+            <span class="decrease"> 2%</span>
+        </aside>
+       </div>
+       <div class="grind-items">
+        <aside>
+          <p>Likes</p>
+          <span class="details">5462</span>
+        </aside>
+        <aside>
+          <img src="images/icon-instagram.svg" alt="img" srcset="">
+          <nav class="icon"><img src="images/icon-up.svg" alt="img" srcset="">
+            <span>2257%</span>
+        </aside>
+       </div>
+       <div class="grind-items">
+        <aside>
+          <p>Profile Views</p>
+          <span class="details">52k</span>
+        </aside>
+        <aside>
+          <img src="images/icon-instagram.svg" alt="img" srcset="">
+          <nav class="icon"><img src="images/icon-up.svg" alt="img" srcset="">
+            <span>1375%</span>
+        </aside>
+       </div>
+       <div class="grind-items">
+        <aside>
+          <p>Retweets</p>
+          <span class="details">117</span>
+        </aside>
+        <aside>
+          <img src="images/icon-twitter.svg" alt="img" srcset="">
+          <nav class="icon"><img src="images/icon-up.svg" alt="img" srcset="">
+            <span>303%</span>
+        </aside>
+       </div>
+       <div class="grind-items">
+        <aside>
+          <p>Likes</p>
+          <span class="details">507</span>
+        </aside>
+        <aside>
+          <img src="images/icon-twitter.svg" alt="img" srcset="">
+          <nav class="icon"><img src="images/icon-up.svg" alt="img" srcset="">
+            <span>553%</span>
+        </aside>
+       </div>
+       <div class="grind-items">
+        <aside>
+          <p>Likes</p>
+          <span class="details">107</span>
+        </aside>
+        <aside>
+          <img src="images/icon-youtube.svg" alt="img" srcset="">
+          <nav class="icon"><img src="images/icon-down.svg" alt="img" srcset="">
+            <span class="decrease">19%</span>
+        </aside>
+       </div>
+       <div class="grind-items">
+        <aside>
+          <p>Total Views</p>
+          <span class="details">1407</span>
+        </aside>
+        <aside>
+          <img src="images/icon-youtube.svg" alt="img" srcset="">
+          <nav class="icon"><img src="images/icon-down.svg" alt="img" srcset="">
+            <span class="decrease">12%</span>
+           </nav>
+        </aside>
+       </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hanzo</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

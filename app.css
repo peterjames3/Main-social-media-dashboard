@@ -1,0 +1,285 @@
+:root {
+  /*  Primary */
+
+  --Lime-Green: hsl(163, 72%, 41%);
+  --Bright-Red: hsl(356, 69%, 56%);
+
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --YouTube: hsl(348, 97%, 39%);
+
+  /* Dark Theme */
+
+  --Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+
+  /*  Light Theme */
+
+  --Toggle: hsl(230, 22%, 74%);
+
+  /*  Dark Theme */
+
+  --Very-Dark-Blue: hsl(230, 17%, 14%);
+  --Very-Dark-Blue/* (Top BG Pattern) */: hsl(232, 19%, 15%);
+  --Dark-Desaturated-Blue: hsl(228, 28%, 20%);
+  --Desaturated-Blue/* (Text) */: hsl(228, 34%, 66%);
+  --White/* (Text) */: hsl(0, 0%, 100%);
+
+  /*  Light Theme */
+
+  --White/* (BG) */: hsl(0, 0%, 100%);
+  --Very-Pale-Blue/* (Top BG Pattern) */: hsl(225, 100%, 98%);
+  --Light-Grayish-Blue/* (Card BG) */: hsl(227, 47%, 96%);
+  --Dark-Grayish-Blue/* (Text) */: hsl(228, 12%, 44%);
+  --Very-Dark-Blue/* (Text) */: hsl(230, 17%, 14%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--Very-Dark-Blue);
+  font-family: "Inter", sans-serif;
+}
+.main-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 75rem;
+  min-height: 30rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--White);
+  width: 100%;
+  align-items: center;
+  font-weight: 700;
+  font-size: clamp(0.75rem, 0.6917rem + 0.2913vw, 0.9375rem);
+}
+.row-1 p {
+  opacity: 0.7;
+}
+hr {
+  display: none;
+}
+.row-2 {
+  display: flex;
+  align-items: center;
+}
+.mode {
+  padding: 0 0.7rem 0 0;
+  opacity: 0.7;
+}
+.whitemode {
+  background-color:white;
+}
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 4em;
+  height: 1.8em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--Lime-Green);
+  border: none;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.27em;
+  bottom: 0.25em;
+  background-color: black;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--Lime-Green);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #007bff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(2em);
+  background-color: var(--White);
+}
+.col-social {
+  width: 100%;
+  display: flex;
+
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.col-social > div {
+  background-color: var(--Dark-Desaturated-Blue);
+  width: 16rem;
+  margin: 1rem 0rem;
+  height: 14rem;
+  text-align: center;
+  color: var(--White);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.col-social > div h2 {
+  font-size: clamp(1.5rem, -0.1044rem + 4.2718vw, 3.5rem);
+}
+.col-social > div p {
+  letter-spacing: 7px;
+  text-transform: capitalize;
+  color: var(--Dark-Grayish-Blue);
+  padding: 0.1rem 0rem;
+}
+.col-social nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0rem;
+}
+
+.col-social .col-fb {
+  border-top: 5px solid var(--Facebook);
+}
+.col-social .col-twitter {
+  border-top: 5px solid var(--Twitter);
+}
+.col-social .col-ig {
+  border-top: 5px solid hsl(37, 97%, 70%);
+}
+
+.col-social .col-youtube {
+  border-top: 5px solid var(--YouTube);
+}
+nav a {
+  padding-left: 0.5rem;
+  text-decoration: none;
+  cursor: default;
+}
+.icon {
+  display: flex;
+  align-items: center;
+}
+.icon span {
+  padding-left: 0.4rem;
+  color: var(--Lime-Green);
+  font-size: 15px;
+}
+.icon .decrease {
+  color: red;
+}
+section h1 {
+  color: var(--White);
+}
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2, 150px;
+  gap: 10px;
+  margin-top: 2rem;
+}
+.grid-container > div {
+  background-color: var(--Dark-Desaturated-Blue);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  color: var(--White);
+  cursor: pointer;
+}
+.details {
+  font-size: clamp(1rem, 0.2233rem + 3.8835vw, 2rem);
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+aside p {
+  padding-bottom: 1rem;
+}
+aside .icon {
+  margin-top: 1rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    /* max-width:16rem;
+    margin-inline: auto;
+    background-color:green; */
+  }
+  hr {
+    display: block;
+    width: 100%;
+    margin-top: 0.9rem;
+    border: 1px solid var(--Dark-Grayish-Blue);
+  }
+  .row-1 {
+    width: 100%;
+    font-size: 12px;
+  }
+  .row-2 {
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  .col-social {
+    justify-content: center;
+  }
+  .grid-container {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    grid-template-columns: repeat(1, 16rem);
+    grid-template-rows: 6, 14rem;
+  }
+  .sub-title {
+    margin-inline: auto;
+    text-align: center;
+    color: white;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .grid-container {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    grid-template-columns: repeat(2, 16rem);
+    grid-template-rows: 3, 14rem;
+    column-gap: 5rem;
+    row-gap: 2rem;
+  }
+}
